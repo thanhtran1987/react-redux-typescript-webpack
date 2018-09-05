@@ -1,7 +1,7 @@
 /// <reference path="./Title.d.ts"/>
 
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
+import styled from 'styled-components';
 
 const TitleWrapper = styled.div`
   position: absolute;
@@ -16,6 +16,9 @@ const TitleWrapper = styled.div`
       color: #fff;
       font-size: 1em;
       margin: 0 0 0 30px;
+      @media only screen and (min-width: 1024px) {
+        font-size: 1.5em;
+      }
     }
   }
 `;
@@ -23,7 +26,7 @@ const LogoWrapper = styled.div`
   margin: 0 1em 0 0;
   width: 20px;
   height: 20px;
-  background: url("/asset/img/logo.png") no-repeat 100%;
+  background: url('/asset/img/logo.png') no-repeat 100%;
   background-size: 100%;
   position: absolute;
   top: 50%;
