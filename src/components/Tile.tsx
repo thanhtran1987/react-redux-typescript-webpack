@@ -26,7 +26,7 @@ const Tile = (props: TileProps) => {
   return (
     <TileWrapper>
       <Padder>
-        <img src={show.image} alt="hero image" />
+        <img src={`${process.env.PUBLIC_URL}${show.image}`} alt="hero image" />
         <Title name={show.name} />
       </Padder>
     </TileWrapper>

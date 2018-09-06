@@ -26,7 +26,7 @@ const LogoWrapper = styled.div`
   margin: 0 1em 0 0;
   width: 20px;
   height: 20px;
-  background: url('/asset/img/logo.png') no-repeat 100%;
+  background: url('${process.env.PUBLIC_URL}/asset/img/logo.png') no-repeat 100%;
   background-size: 100%;
   position: absolute;
   top: 50%;

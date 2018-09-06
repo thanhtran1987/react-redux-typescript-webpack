@@ -8,7 +8,7 @@ export const loadShowsSuccess = (resp: any) => {
 export const loadShowsError = (message: string) => action(ShowsActionTypes.FETCH_ERROR, message);
 
 export const loadShows = () => {
-  return fetch('http://localhost:8080/json/data.json').then(response => {
+  return fetch(process.env.PUBLIC_URL + '/json/data.json').then(response => {
     return response.json();
   });
 };

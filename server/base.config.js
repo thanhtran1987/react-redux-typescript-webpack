@@ -1,7 +1,9 @@
+const path = require('path');
+
 module.exports = {
   entry: './src/index.tsx',
   output: {
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, '../dist'),
     publicPath: '/',
     filename: 'bundle.js',
   },
@@ -15,11 +17,7 @@ module.exports = {
         loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
       },
-      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
     ],
   },
-  devtool: 'source-map',
-  devServer: {
-    contentBase: './dist',
-  },
+  plugins: [],
 };
